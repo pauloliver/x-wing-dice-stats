@@ -1,0 +1,97 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.input-field.attack-input label {
+    color: darkred;
+}
+
+.input-field.attack-input input[type=number]:focus + label {
+    color: red;
+}
+
+.input-field.attack-input input[type=number]:focus {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+}
+
+.input-field.attack-input input[type=checkbox]:checked + label:before {
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.input-field.defense-input label {
+    color: darkgreen;
+}
+
+.input-field.defense-input input[type=number]:focus + label {
+    color: lime;
+}
+
+.input-field.defense-input input[type=number]:focus {
+    border-bottom: 1px solid lime;
+    box-shadow: 0 1px 0 0 lime;
+}
+
+.input-field.defense-input input[type=checkbox]:checked + label:before {
+    border-right: 2px solid lime;
+    border-bottom: 2px solid lime;
+}
+
+#compute-btn.empire {
+    background-color: #8bc34a;
+
+}
+
+#compute-btn.rebel {
+    background-color: #b71c1c;
+}
+
+nav.empire {
+    background-color: #8bc34a;
+}
+
+nav.rebel {
+    background-color: #B71C1C;
+}
+
+#flippy-card figure {
+    margin: 0;
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+#flippy-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#flippy-card .back {
+    transform: rotateY( 180deg );
+}
+
+#flippy-card.flipped{
+    transform: rotateY( 180deg );
+}
+
+.transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}

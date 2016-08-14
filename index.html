@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>X Wing Dice Simulator</title>
+
+    <link type="text/css" rel="stylesheet" href="./bower_components/materialize/dist/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+    <nav role="navigation" class="empire transition">
+        <div class="nav-wrapper container">
+            <span> X Wing Dice Statistics</span>
+            <a href="#" id="logo-link" class="brand-logo right">
+                <section class="card-container">
+                    <div id="flippy-card">
+                        <figure class="front"><i class="fa fa-empire fa-lg" aria-hidden="true"></i></figure>
+                        <figure class="back"><i class="fa fa-rebel" aria-hidden="true"></i></figure>
+                    </div>
+                </section>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-panel">
+            <canvas id="chart" width="550" height="225"></canvas>
+        </div>
+
+        <div class="row card-panel">
+            <div class="col m6 s12">
+                <div class="row">
+                    <div class="input-field col s12 attack-input">
+                        <input type="number" id="num-attacks" min="0" />
+                        <label for="num-attacks">Number of Attack Dice</label>
+                    </div>
+                    <div class="input-field col s12 attack-input">
+                        <input type="checkbox" id="attack-focus" min="0"/>
+                        <label for="attack-focus">Attack Focus</label>
+                    </div>
+                    <div class="input-field col s12 attack-input">
+                        <input type="checkbox" id="attack-target-lock" min="0"/>
+                        <label for="attack-target-lock">Attack Target Lock</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col m6 s12">
+                <div class="input-field col s12 defense-input">
+                    <input type="number" id="num-defense" min="0" />
+                    <label for="num-defense">Number of Defense Dice</label>
+                </div>
+                <div class="input-field col s12 defense-input">
+                    <input type="checkbox" id="defense-focus" min="0" />
+                    <label for="defense-focus">Defense Focus</label>
+                </div>
+                <div class="input-field col s12 defense-input">
+                    <input type="checkbox" id="defense-evade" min="0" />
+                    <label for="defense-evade">Defense Evade</label>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <div>
+                <a class="waves-effect waves-light btn empire transition" id="compute-btn">Compute</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="./bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="./bower_components/ramda/dist/ramda.min.js"></script>
+    <script src="./x3.min.js"></script>
+    <script src="./init.min.js"></script>
+
+
+
+
+</body>
+</html>

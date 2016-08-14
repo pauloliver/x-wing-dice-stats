@@ -1,0 +1,30 @@
+{
+  "name": "x-wing",
+  "authors": [
+    "Paul Heimburg <pauloh22@gmail.com>"
+  ],
+  "description": "x wing dice stats",
+  "main": "index.html",
+  "keywords": [
+    "star",
+    "wars",
+    "dice"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.2.1",
+    "font-awesome": "^4.6.3",
+    "chart.js": "npm:chart.js#^2.2.1",
+    "ramda": "npm:ramda#^0.22.1",
+    "materialize": "^0.97.7"
+  }
+}

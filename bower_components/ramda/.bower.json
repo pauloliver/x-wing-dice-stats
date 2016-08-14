@@ -1,0 +1,19 @@
+{
+  "name": "ramda",
+  "description": "A practical functional library for JavaScript programmers.",
+  "main": "dist/ramda.js",
+  "license": "MIT",
+  "homepage": "http://ramdajs.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ramda/ramda.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "_source": "npm:ramda",
+  "_target": "^0.22.1",
+  "_release": "0.22.1",
+  "version": "0.22.1",
+  "_originalSource": "npm:ramda",
+  "_direct": true
+}
