@@ -2,6 +2,6 @@
 
 Gives you estimations of how many hits X-Wing dice will give.  Currently treats hits and crits the same.
 
-[https://pauloliver.github.io/x-wing-dice-stats/](Give it a try!)
+[Give it a try!](https://pauloliver.github.io/x-wing-dice-stats/)
 
 
